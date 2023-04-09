@@ -1,5 +1,5 @@
 import { Worker, isMainThread, parentPort } from 'worker_threads';
-import {fileURLToPath} from "url";
+import { fileURLToPath } from "url";
 
 // n is received from main thread
 const nthFibonacci = (n) => n < 2 ? n : nthFibonacci(n - 1) + nthFibonacci(n - 2);
